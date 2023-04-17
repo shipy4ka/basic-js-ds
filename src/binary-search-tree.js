@@ -82,6 +82,7 @@ class BinarySearchTree {
         return currentNode;
       }else if(data>currentNode.data){
         currentNode.right = removeNode(currentNode.right,data);
+        return currentNode;
       }else{
         if(!currentNode.left && !currentNode.right){
           return null;
